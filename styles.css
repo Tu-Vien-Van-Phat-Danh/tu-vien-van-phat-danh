@@ -1,0 +1,71 @@
+.box {
+  width: 85%;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px;
+  max-width: 5000px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.column-left, .column-middle, .column-right {
+  float: left;
+  padding: 10px;
+  height: 1000px;
+  border: 1px solid black;
+}
+
+.p, .column-left, .column-middle, .column-right {
+  text-align: center;
+}
+
+.column-left, .column-right {
+  width: 25.08%
+}
+
+.column-left {
+  margin-left: 58px;
+}
+
+.column-right {
+  margin-right: 0%;
+}
+.column-middle {
+  width: 40%
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+.vertical {
+  display: inline-block;
+  border: 1px solid black;
+  margin-left: 58px;
+  margin-right: auto;
+  padding: 80px;
+  height: 800px;
+  width: 70%;
+  
+}
+
+#masters {
+  display: inline-block;
+	border:1px solid black;
+  padding: 100px;
+  height: 760px;
+}
+/*
+#locations {
+  display: inline-block;
+  display: inline-block;
+	border:1px solid black;
+  height: 800px;
+  position: right;
+}
