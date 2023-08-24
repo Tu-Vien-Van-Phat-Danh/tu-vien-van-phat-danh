@@ -13,10 +13,11 @@ body {
   height: 95vh;
 }
 
-.wrapper > div {
+.wrapper>div {
   border: 2px solid black;
   background-color: blanchedalmond;
 }
+
 .one {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -36,6 +37,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .three {
   grid-column-start: 3;
   grid-column-end: 4;
@@ -44,4 +46,25 @@ body {
 .right-banner {
   width: 100%;
   height: 100%;
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+
+  font-size: 1.2rem;
+  text-align: center;
+  color: blue;
+}
+
+.location-title {
+  color: red;
+  font-weight: bold;
+}
+
+.tele-contact {
+  color: red;
+  font-weight: bold;
 }
