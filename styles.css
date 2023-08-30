@@ -1,16 +1,14 @@
 body {
-  margin: 0;
+  margin: 0px;
   box-sizing: border-box;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: 25% 50% 25%;
-  gap: 5px;
-  grid-template-rows: 30% 70%;
+  gap: 5px;   
+  grid-template-rows: 25% 75%;
   margin: 20px;
-  border: 1px solid black;
-  height: 95vh;
 }
 
 .wrapper>div {
@@ -48,6 +46,42 @@ body {
   height: 100%;
 }
 
+.teachers {
+  display: flex;
+  flex-direction: column;
+  background-image: url(assets/floral-frost.jpg);
+  
+  text-align: center;
+}
+
+.five-precepts {
+  background-color: white;
+
+  margin: auto;
+  padding: 20px 20px 20px 20px;
+  justify-content: center;
+  border: 8px solid #C9D215;
+  border-style: ridge;
+}
+
+.master {
+  display: flex;
+  flex-direction: column;
+
+  width: 150px;
+  margin: auto;
+  color: red;
+}
+
+.dalai {
+  display: flex;
+  flex-direction: column;
+
+  width: 70%;
+  margin: auto;
+  color: red;
+}
+
 .locations {
   display: flex;
   flex-direction: column;
@@ -68,3 +102,4 @@ body {
   color: red;
   font-weight: bold;
 }
+
