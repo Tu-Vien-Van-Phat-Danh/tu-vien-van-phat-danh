@@ -11,7 +11,7 @@ body {
   margin: 0% 10%;
 }
 
-.one {
+.left-column-banner {
   grid-column-start: 1;
   grid-column-end: 2;
 }
@@ -21,7 +21,7 @@ body {
   height: 100%;
 }
 
-.two {
+.middle-column-banner {
   grid-column-start: 2;
   grid-column-end: 3;
 }
@@ -30,8 +30,7 @@ body {
   width: 100%;
   height: 100%;
 }
-
-.three {
+.right-column-banner {
   grid-column-start: 3;
   grid-column-end: 4;
 }
@@ -41,7 +40,7 @@ body {
   height: 100%;
 }
 
-.teachers {
+.left-panel {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -51,11 +50,9 @@ body {
   text-align: center;
 }
 
-.five-precepts {
+.six-great-principles {
   background-color: #FFFFFF;
 
-  margin: auto;
-  padding: 20px 20px 20px 20px;
   justify-content: center;
   border: 8px solid #C9D215;
   border-style: ridge;
@@ -64,19 +61,28 @@ body {
 .master {
   display: flex;
   flex-direction: column;
+  font-family: 'Times New Roman', Times, serif; 
+  font-weight: bold; 
+  font-size: .9rem; 
+  text-align: center; color: #CC6600;
+  line-height: 1.6rem;
 
-  width: 150px;
+  width: 65%;
   margin: auto;
-  color: red;
 }
 
 .dalai {
   display: flex;
   flex-direction: column;
 
-  width: 70%;
+  font-family: 'Times New Roman', Times, serif; 
+  font-weight: bold; 
+  font-size: .9rem; 
+  text-align: center; color: #CC6600;
+  line-height: 1.6rem;
+
+  width: 85%;
   margin: auto;
-  color: red;
 }
 
 .content {
