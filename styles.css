@@ -7,7 +7,7 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: 18% 60% 18%;
-  grid-template-rows: 0.05fr 0.03fr 1fr;  
+  grid-template-rows: 0.05fr 1fr;
   margin: 0% 10%;
 }
 
@@ -47,13 +47,14 @@ body {
   background-image: url(assets/floral-frost.jpg);
   background-repeat: repeat;
   color: red;
+  padding: 1%;
 }
 
 .left-panel-title {
-  background-color: #FFFFFF;
-  border: 8px solid #C9D215;
+  background-color: #ffffff;
+  border: 8px solid #c9d215;
   border-style: groove;
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
 
   flex-grow: 0.2;
   text-align: center;
@@ -62,11 +63,11 @@ body {
 }
 
 .six-great-principles {
-  background-color: #FFFFFF;
-  border: 8px solid #C9D215;
+  background-color: #ffffff;
+  border: 8px solid #c9d215;
   border-style: groove;
   border-top: 0px;
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
 
   flex-grow: 0.2;
   text-align: center;
@@ -82,10 +83,11 @@ body {
 .master {
   display: flex;
   flex-direction: column;
-  font-family: 'Times New Roman', Times, serif; 
-  font-weight: bold; 
-  font-size: 1.2rem; 
-  text-align: center; color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  color: red;
   line-height: 1.6rem;
 
   width: 65%;
@@ -96,10 +98,11 @@ body {
   display: flex;
   flex-direction: column;
 
-  font-family: 'Times New Roman', Times, serif; 
-  font-weight: bold; 
-  font-size: 1.2rem; 
-  text-align: center; color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  color: red;
   line-height: 1.6rem;
 
   width: 85%;
@@ -111,7 +114,8 @@ body {
   flex-direction: column;
   font-size: 1.2rem;
 
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  color: goldenrod;
   text-align: center;
 }
 
@@ -123,36 +127,30 @@ body {
   animation: mover 6s linear infinite;
 }
 @keyframes mover {
-  0%{
-    text-shadow: 0 0 30px rgba(0,0,0,0);
+  0% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0);
   }
-  50%{
-    text-shadow: 0 0 30px rgba(0,0,0,0.3);
-    transform: translateX(30px);
+  50% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    transform: translateX(100px);
   }
-  100%{
-    text-shadow: 0 0 30px rgba(0,0,0,0);
+  100% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0);
   }
 }
 
-.news {
+.announcements {
   display: inline-flex;
-  gap: 1%;
-  color: goldenrod;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .announcements-left {
-  display: flex;
-  flex-direction: column;
-  width: 47%;
-  margin: 0% 0% 3% 3%;
+  width: 50%;
 }
 
 .announcements-right {
-  display: flex;
-  flex-direction: column;
-  width: 47%;
-  margin: 0% 3% 3% 0%;
+  width: 50%;
 }
 
 .separator-top {
@@ -175,12 +173,8 @@ body {
 }
 
 .long {
-width: 95%;
-}
-
-.description {
-  margin: 0% 3% 0% 3%;
-  color: goldenrod;
+  margin: 2%;
+  width: 97%;
 }
 
 .schedule-title {
@@ -191,36 +185,38 @@ width: 95%;
   animation: mover 6s linear infinite;
 }
 @keyframes mover {
-  0%{
-    text-shadow: 0 0 30px rgba(0,0,0,0);
+  0% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0);
   }
-  50%{
-    text-shadow: 0 0 30px rgba(0,0,0,0.3);
+  50% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
     transform: translateX(30px);
   }
-  100%{
-    text-shadow: 0 0 30px rgba(0,0,0,0);
+  100% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0);
   }
+}
+
+.description {
+  display: inline-flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 2%;
 }
 
 .schedule {
   display: inline-flex;
-  gap: 1%;
-  color: goldenrod;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .schedule-left {
-  display: flex;
-  flex-direction: column;
-  width: 47%;
-  margin: 0% 0% 3% 3%;
+    width: 50%;
+
 }
 
 .schedule-right {
-  display: flex;
-  flex-direction: column;
-  width: 47%;
-  margin: 0% 3% 3% 0%;
+  width: 50%;
 }
 
 .locations {
@@ -230,6 +226,7 @@ width: 95%;
   min-height: 100vh;
   background-image: url(assets/floral-frost.jpg);
   background-repeat: repeat;
+  padding: 1%;
 
   font-size: 1.2rem;
   text-align: center;
@@ -245,4 +242,3 @@ width: 95%;
   color: red;
   font-weight: bold;
 }
-
