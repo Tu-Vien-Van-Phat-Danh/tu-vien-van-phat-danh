@@ -7,7 +7,7 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: 18% 60% 18%;
-  grid-template-rows: 0.05fr 1fr;  
+  grid-template-rows: 0.05fr 1fr;
   margin: 0% 10%;
 }
 
@@ -43,28 +43,51 @@ body {
 .left-panel {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  justify-content: space-evenly;
   background-image: url(assets/floral-frost.jpg);
   background-repeat: repeat;
+  color: red;
+  padding: 1%;
+}
 
+.left-panel-title {
+  background-color: #ffffff;
+  border: 8px solid #c9d215;
+  border-style: groove;
+  font-size: 1.2rem;
+
+  flex-grow: 0.2;
   text-align: center;
+  margin: 5% 5% 0% 5%;
+  font-weight: bold;
 }
 
 .six-great-principles {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  border: 8px solid #c9d215;
+  border-style: groove;
+  border-top: 0px;
+  font-size: 1.2rem;
 
-  justify-content: center;
-  border: 8px solid #C9D215;
-  border-style: ridge;
+  flex-grow: 0.2;
+  text-align: center;
+  margin: 0% 5% 5% 5%;
+  font-weight: bold;
+}
+
+.translation {
+  color: blue;
+  font-weight: 100;
 }
 
 .master {
   display: flex;
   flex-direction: column;
-  font-family: 'Times New Roman', Times, serif; 
-  font-weight: bold; 
-  font-size: .9rem; 
-  text-align: center; color: #CC6600;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  color: red;
   line-height: 1.6rem;
 
   width: 65%;
@@ -75,10 +98,11 @@ body {
   display: flex;
   flex-direction: column;
 
-  font-family: 'Times New Roman', Times, serif; 
-  font-weight: bold; 
-  font-size: .9rem; 
-  text-align: center; color: #CC6600;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  color: red;
   line-height: 1.6rem;
 
   width: 85%;
@@ -86,13 +110,113 @@ body {
 }
 
 .content {
-  min-height: 100vh;
-  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+
+  background-color: #ffffff;
+  color: goldenrod;
   text-align: center;
 }
 
-.content-text {
-  margin: 5% 0;
+.news-title {
+  font-size: 50px;
+  display: inline-block;
+  font-weight: bolder;
+  color: red;
+  animation: mover 6s linear infinite;
+}
+@keyframes mover {
+  0% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    transform: translateX(100px);
+  }
+  100% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+  }
+}
+
+.announcements {
+  display: inline-flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.announcements-left {
+  width: 50%;
+}
+
+.announcements-right {
+  width: 50%;
+}
+
+.separator-top {
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: none;
+  border-left-style: solid;
+  border-top-color: black;
+  border-right-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
+.long {
+  margin: 2%;
+  width: 97%;
+}
+
+.schedule-title {
+  font-size: 50px;
+  display: inline-block;
+  font-weight: bolder;
+  color: red;
+  animation: mover 6s linear infinite;
+}
+@keyframes mover {
+  0% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    transform: translateX(30px);
+  }
+  100% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+  }
+}
+
+.description {
+  display: inline-flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 2%;
+}
+
+.schedule {
+  display: inline-flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.schedule-left {
+    width: 50%;
+
+}
+
+.schedule-right {
+  width: 50%;
 }
 
 .locations {
@@ -102,6 +226,7 @@ body {
   min-height: 100vh;
   background-image: url(assets/floral-frost.jpg);
   background-repeat: repeat;
+  padding: 1%;
 
   font-size: 1.2rem;
   text-align: center;
@@ -117,4 +242,3 @@ body {
   color: red;
   font-weight: bold;
 }
-
