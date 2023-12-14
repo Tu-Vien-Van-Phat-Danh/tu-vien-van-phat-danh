@@ -150,6 +150,11 @@ body {
   width: 50%;
 }
 
+.announcement-images {
+  height: 100%;
+  width: 100%;
+}
+
 .separator-top {
   border-top-width: 1px;
   border-right-width: 1px;
@@ -163,16 +168,13 @@ body {
   border-right-color: black;
   border-bottom-color: black;
   border-left-color: black;
-  margin-top: 0px;
+  margin-top: 60px;
   margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-}
-
-.long {
-  margin: 2%;
+  margin-bottom: 30px;
+  margin-left: auto;  
   width: 97%;
 }
+
 
 .schedule-title {
   font-size: 50px;
@@ -213,6 +215,11 @@ body {
 
 .schedule-right {
   width: 50%;
+}
+
+.schedule-images {
+  height:75%;
+  width: 90%;
 }
 
 .locations {
