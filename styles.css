@@ -157,6 +157,10 @@ body {
   width: 50%;
 }
 
+.community-date {
+  font-size: 1rem;
+}
+
 .announcements-right {
   width: 50%;
 }
