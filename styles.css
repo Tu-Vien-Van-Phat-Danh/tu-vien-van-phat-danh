@@ -12,6 +12,7 @@ body {
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: 0.01fr .5fr;
   margin: 0% 10%;
+  height: 95vh;
 }
 
 .banner {
@@ -124,7 +125,13 @@ body {
   text-align: center;
 }
 
-.news-title {
+.announcements-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  }
+
+.announcements-title {
   font-size: 50px;
   display: inline-block;
   font-weight: bolder;
@@ -165,7 +172,7 @@ body {
   width: 50%;
 }
 
-.announcement-images {
+.announcements-images {
   width: 90%;
 }
 
@@ -187,6 +194,12 @@ body {
   margin-right: auto;
   margin-left: auto;
   width: 90%;
+}
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: .5rem; 
 }
 
 .schedule-title {
@@ -239,6 +252,8 @@ body {
 }
 
 .locations {
+  min-height: 950px;
+  padding: 1%;
   background-image: url(assets/floral-frost.jpg);
   background-repeat: repeat;
 }
@@ -246,10 +261,9 @@ body {
 .locations-container {
   display: flex;
   flex-direction: column;
+  /*
   justify-content: space-evenly;
-  padding: 1%;
-  height: 50%;
-
+  */
   font-size: 1.2rem;
   text-align: center;
   color: blue;
@@ -263,4 +277,83 @@ body {
 .tele-contact {
   color: red;
   font-weight: bold;
+}
+
+.indiana {
+  padding-top: .5rem;
+  padding-bottom: 2.5rem;
+}
+.kentucky {
+  padding-bottom: 2.5rem;
+}
+.texas {
+  padding-bottom: 2.5rem;
+}
+.new-jersey {
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 475px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+  }
+  .banner {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .left-panel {
+    display: none;
+  }
+  .locations {
+    display: none;
+  }
+  .content {
+    font-size: 0.9rem;
+    height: 95vh;
+    background-repeat: repeat;
+  }
+  .announcements-images {
+    width: 75%;
+    height: 75%;
+  }
+  .announcements-title {
+    font-size: 35px;
+  }
+  .schedule-title {
+    font-size: 35px;
+  }
+  .announcements-container {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 835px) {
+  .left-panel-title {
+    font-size: 1rem;
+  }
+  .six-great-principles {
+    font-size: 1rem;
+  }
+  .master {
+    font-size: .8rem;
+  }
+  .dalai {
+    font-size: .8rem;
+  }
+  .announcements-images {
+    width: 75%;
+    height: 75%;
+  }
+  .announcements-title, .schedule-title {
+    font-size: 35px;
+  }
+  .content {
+    font-size: .9rem;
+  }
+  .locations-container {
+    font-size: 1rem;
+    justify-content: space-evenly;
+  }
 }
