@@ -5,8 +5,6 @@ body {
   font-family: 'DM Sans', sans-serif;
 }
 
-@media (min-width: 475px) {}
-
 .wrapper {
   display: grid;
   grid-template-columns: 20% 60% 20%;
@@ -129,7 +127,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
-  }
+}
 
 .announcements-title {
   font-size: 50px;
@@ -195,7 +193,7 @@ body {
 .schedule-container {
   display: flex;
   flex-direction: column;
-  padding-top: .5rem; 
+  padding-top: .5rem;
 }
 
 .schedule-title {
@@ -257,9 +255,6 @@ body {
 .locations-container {
   display: flex;
   flex-direction: column;
-  /*
-  justify-content: space-evenly;
-  */
   font-size: 1.2rem;
   text-align: center;
   color: blue;
@@ -279,14 +274,92 @@ body {
   padding-top: .5rem;
   padding-bottom: 2.5rem;
 }
+
 .kentucky {
   padding-bottom: 2.5rem;
 }
+
 .texas {
   padding-bottom: 2.5rem;
 }
+
 .new-jersey {
   padding-bottom: 2rem;
+}
+
+@media (max-width: 835px) {
+
+  .wrapper {
+     height: 80vh;
+  }
+
+  .left-panel {
+    min-height: 0;
+  }
+
+  .left-panel-title {
+    font-size: 0.5rem;
+  }
+
+  .six-great-principles {
+    font-size: 0.5rem;
+  }
+
+  .master {
+    font-size: 0.5rem;
+  }
+
+  .dalai {
+    font-size: 0.5rem;
+  }
+
+  .locations {
+    min-height: 0;
+  }
+  
+  .locations-container {
+    font-size: 0.7rem;
+    justify-content: space-evenly;
+  }
+
+  .content {
+    font-size: 0.9rem;
+  }
+  
+  .announcements-title {
+    font-size: 35px;
+  }
+
+  .announcements-container {
+    height: 275px;
+    padding: 1%;
+  }
+  
+  .announcements-images {
+    width: 75%;
+    height: 75%;
+  }
+  
+  .announcements {
+    font-size: 0.8rem;
+  }
+
+  .schedule-title {
+    font-size: 35px;
+  }
+
+  .schedule-container {
+    padding: 1%;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .schedule {
+    font-size: 0.7rem;
+  }
+
 }
 
 @media (max-width: 475px) {
@@ -295,61 +368,45 @@ body {
     flex-direction: column;
     margin: 0%;
   }
+
   .banner {
     grid-column-start: 2;
     grid-column-end: 3;
   }
+
   .left-panel {
     display: none;
   }
+
   .locations {
     display: none;
   }
+
   .content {
     font-size: 0.9rem;
-    height: 95vh;
-    background-repeat: repeat;
+    height: 100vh;
   }
-  .announcements-images {
-    width: 75%;
-    height: 75%;
-  }
-  .announcements-title {
-    font-size: 35px;
-  }
-  .schedule-title {
-    font-size: 35px;
-  }
-  .announcements-container {
-    padding-bottom: 1rem;
-  }
-}
 
-@media (max-width: 835px) {
-  .left-panel-title {
-    font-size: 1rem;
+  .announcements-container {
+    padding: 1%;
   }
-  .six-great-principles {
-    font-size: 1rem;
+
+  .announcements {
+    height: 175px;
+    font-size: 0.75rem;
   }
-  .master {
-    font-size: .8rem;
-  }
-  .dalai {
-    font-size: .8rem;
-  }
+
   .announcements-images {
     width: 75%;
-    height: 75%;
+    height: 63%;
   }
-  .announcements-title, .schedule-title {
-    font-size: 35px;
+
+  .schedule-container {
+    padding: 1%;
+    height: 400px;
   }
-  .content {
-    font-size: .9rem;
-  }
-  .locations-container {
-    font-size: 1rem;
-    justify-content: space-evenly;
+
+  .schedule {
+    font-size: 0.74rem;
   }
 }
