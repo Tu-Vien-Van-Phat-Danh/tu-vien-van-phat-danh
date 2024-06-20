@@ -1,15 +1,19 @@
 const principles = document.querySelector(".principles");
-const principlesSub = document.querySelector(".principles-sub");
 const biography = document.querySelector(".biography");
-const biographySub = document.querySelector(".biography-sub");
 const more = document.querySelector(".more");
+const principlesSub = document.querySelector(".principles-sub");
+const biographySub = document.querySelector(".biography-sub");
 const moreSub = document.querySelector(".more-sub");
 
 principles.addEventListener("mouseover", () => {
     principlesSub.style.visibility = "visible";
 });
 
-principles, principlesSub.addEventListener("mouseleave", () => {
+principlesSub.addEventListener("mouseover", () => {
+    principlesSub.style.visibility = "visible";
+});
+
+principlesSub.addEventListener("mouseleave", () => {
     principlesSub.style.visibility = "hidden";
 });
 

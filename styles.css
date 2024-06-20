@@ -27,8 +27,8 @@ body {
 }
 
 .navigation-bar {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
   max-width: 100%;
@@ -74,45 +74,76 @@ ul {
 }
 
 .home-tab {
+  border-style: inset;
   width: 25%;
   position: relative;
 }
 
 .principles-tab {
+  border-style: inset;
   width: 25%;
   position: relative;
 }
 
 .biography-tab {
+  border-style: inset;
   width: 25%;
   position: relative;
-
 }
 
 .more-tab { 
+  border-style: inset;
   width: 25%;
   position: relative;
 
 }
 
 .home-sub {
+  border-style: inset;
   visibility: hidden;
   position: absolute;
 }
 
 .principles-sub {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 34px;
+  border-style: inset;
+  z-index: 99;
+  
   visibility: hidden;
   position: absolute;
+  background-image: url(assets/floral-frost.jpg);
 }
 
 .biography-sub {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 34px;
+  border-style: inset;
+  z-index: 99;
+
   visibility: hidden;
   position: absolute;
+  background-image: url(assets/floral-frost.jpg);
 }
 
 .more-sub {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 34px;
+  border-style: inset;
+  z-index: 99;
+
   visibility: hidden;
   position: absolute;
+  background-image: url(assets/floral-frost.jpg);
 }
 
 .under-wrapper {
@@ -251,8 +282,6 @@ ul {
 }
 
 .announcements {
-  display: inline-flex;
-  justify-content: center;
   max-width: 100%;
 }
 
@@ -270,6 +299,15 @@ ul {
 
 .announcements-images {
   width: 90%;
+}
+
+.announcements-subtitle {
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+.announcements-caption {
+  font-size: 0.98rem;
 }
 
 .separator-top {
